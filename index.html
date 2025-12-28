@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passaparola Travel - Digital Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Passaparola Travel</h1>
+
+    <div class="instructions">
+        <strong>Regole:</strong> Clicca "Mescola Dadi". Scrivi il maggior numero di parole (4+ lettere) usando le lettere mostrate entro il tempo limite.
+        <br><em>Punteggio:</em> 4 lettere = 1pt, 5 lettere = 2pt, ecc. Se due giocatori hanno la stessa parola, questa viene annullata!
+    </div>
+
+    <div class="game-board" id="board">
+        </div>
+
+    <div class="controls">
+        <button class="btn-roll" onclick="rollDice()">🎲 Mescola Dadi</button>
+        <button onclick="startTimer()">⏱️ Avvia Timer (3 min)</button>
+    </div>
+
+    <div class="timer-container" id="timerDisplay" style="display:none;">
+        <span id="time">03:00</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

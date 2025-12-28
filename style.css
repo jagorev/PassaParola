@@ -1,0 +1,138 @@
+:root {
+    --bg-color: #f0f2f5;
+    --plastic-color: #fdfdf0; /* Colore crema della base */
+    --shadow-color: #ccc;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.instructions {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Il contenitore che simula la forma del gioco fisico */
+.game-board {
+    background-color: var(--plastic-color);
+    padding: 20px;
+    border-radius: 50px; /* Arrotondato come il fiore */
+    box-shadow: 
+        0 10px 20px rgba(0,0,0,0.15),
+        inset 0 -5px 10px rgba(0,0,0,0.05);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+    border: 8px solid #e0e0d0;
+}
+
+.die {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    box-shadow: 
+        0 4px 6px rgba(0,0,0,0.3),
+        inset 0 2px 4px rgba(255,255,255,0.4);
+    user-select: none;
+    transition: transform 0.3s ease;
+}
+
+/* Colori dei dadi basati sulla foto */
+.die.purple { background-color: #6a1b9a; }
+.die.black { background-color: #333; }
+.die.green { background-color: #2e7d32; }
+.die.yellow { background-color: #fbc02d; color: #333; }
+.die.red { background-color: #c62828; }
+.die.orange { background-color: #ef6c00; }
+.die.pink { background-color: #d81b60; }
+.die.blue { background-color: #1565c0; }
+
+.controls {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-weight: bold;
+}
+
+.btn-roll {
+    background-color: #2196F3;
+    color: white;
+}
+.btn-roll:hover { background-color: #1976D2; }
+
+.timer-container {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #555;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Animazione di scuotimento */
+.shaking {
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@media (max-width: 400px) {
+    .die { width: 60px; height: 60px; font-size: 2rem; }
+    .game-board { gap: 10px; padding: 15px; }
+}
