@@ -37,10 +37,30 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Nuovo stile Titolo */
 h1 {
-    color: var(--text-main);
-    margin-bottom: 10px;
+    font-size: 3.5rem;
+    font-weight: 900;
     text-align: center;
+    margin: 10px 0 40px;
+    letter-spacing: -2px;
+    
+    /* Gradiente colorato */
+    background: linear-gradient(135deg, #2196F3 0%, #e91e63 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+    /* Ombra morbida colorata */
+    filter: drop-shadow(0 4px 10px rgba(33, 150, 243, 0.3));
+    
+    /* Piccola animazione al passaggio del mouse */
+    transition: transform 0.3s ease;
+    cursor: default;
+}
+
+h1:hover {
+    transform: scale(1.05) rotate(-2deg);
 }
 
 /* Bottone Tema */
