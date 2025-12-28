@@ -1,10 +1,14 @@
 {
   "name": "passaparola-travel",
   "version": "1.0.0",
+  "description": "Gioco Passaparola",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
-    "start": "npx serve -s ."
+    "start": "npx serve -s . -p 8080"
   },
   "dependencies": {
-    "serve": "^14.0.0"
+    "serve": "^14.2.1"
   }
 }
