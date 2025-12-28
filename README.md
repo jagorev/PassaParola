@@ -13,8 +13,7 @@ Welcome to **Passaparola Travel**, the digital version of the classic travel wor
 
 ## 🎮 How to Play
 
-1.  **Roll the Dice**: Click the **"🎲 Mescola Dadi"** button to generate a new combination of letters.
-2.  **Start Timer**: Press **"⏱️ Avvia Timer"** to start the 30-second countdown.
+1.  **Roll the Dice**: Click the **"🎲 Mescola Dadi"** button to generate a new combination of letters and start the 30-second countdown.
 3.  **Find Words**: Write down on a piece of paper all the meaningful words you can form with the visible letters.
     *   Words must have at least **4 letters**.
 4.  **Calculate Score**: When time runs out, compare words with other players.
