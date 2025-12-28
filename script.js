@@ -42,9 +42,8 @@ function rollDice() {
             const randomFace = dieData.faces[Math.floor(Math.random() * dieData.faces.length)];
             d.textContent = randomFace;
         });
-        // Resetta timer se attivo
-        stopTimer();
-        document.getElementById('timerDisplay').style.display = 'none';
+        // Avvia automaticamente il timer
+        startTimer();
     }, 500);
 }
 
