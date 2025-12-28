@@ -55,7 +55,7 @@ function startTimer() {
     const timeSpan = document.getElementById('time');
     display.style.display = 'flex';
     
-    let duration = 60 * 1; // 1 minuto
+    let duration = 30 * 1; // 30 secondi
     updateTimerDisplay(duration, timeSpan);
 
     countdown = setInterval(() => {
@@ -79,6 +79,21 @@ function updateTimerDisplay(seconds, element) {
     const m = Math.floor(seconds / 60);
     const s = seconds % 60;
     element.textContent = `${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
+}
+
+// Gestione Tema Chiaro/Scuro
+function toggleTheme() {
+    const html = document.documentElement;
+    const btn = document.getElementById('themeToggle');
+    const currentTheme = html.getAttribute('data-theme');
+
+    if (currentTheme === 'dark') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '🌙'; // Icona Luna per passare a scuro
+    } else {
+        html.setAttribute('data-theme', 'dark');
+        btn.textContent = '☀️'; // Icona Sole per passare a chiaro
+    }
 }
 
 // Avvio iniziale
