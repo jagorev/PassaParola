@@ -21,17 +21,83 @@ h1 {
     text-align: center;
 }
 
-.instructions {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    max-width: 600px;
-    margin-bottom: 20px;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    text-align: center;
+/* --- INIZIO NUOVO STILE ISTRUZIONI (Sostituisce le vecchie classi .instructions) --- */
+.instructions-container {
+    display: flex;
+    gap: 20px;
+    max-width: 800px;
+    margin-bottom: 30px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+.instruction-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    flex: 1;
+    min-width: 280px;
+    border: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.instruction-card h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #f0f2f5;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.instruction-card p {
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.score-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.score-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+    color: #555;
+    font-weight: 500;
+}
+
+.score-list li:last-child {
+    border-bottom: none;
+}
+
+.score-list li strong {
+    color: #2196F3;
+    background: #e3f2fd;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+}
+
+.score-warning {
+    background-color: #fff3e0;
+    color: #e65100;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    border-left: 4px solid #ff9800;
+    margin-top: auto;
+}
+/* --- FINE NUOVO STILE ISTRUZIONI --- */
 
 /* Il contenitore che simula la forma del gioco fisico */
 .game-board {

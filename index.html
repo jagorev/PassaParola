@@ -10,9 +10,25 @@
 
     <h1>Passaparola Travel</h1>
 
-    <div class="instructions">
-        <strong>Regole:</strong> Clicca "Mescola Dadi". Scrivi il maggior numero di parole (4+ lettere) usando le lettere mostrate entro il tempo limite.
-        <br><em>Punteggio:</em> 4 lettere = 1pt, 5 lettere = 2pt, ecc. Se due giocatori hanno la stessa parola, questa viene annullata!
+    <div class="instructions-container">
+        <!-- Card Regole -->
+        <div class="instruction-card">
+            <h3>📜 Regole</h3>
+            <p>Scrivi il maggior numero di parole di almeno <strong>4 lettere</strong> usando i caratteri estratti, prima che scada il tempo.</p>
+        </div>
+
+        <!-- Card Punteggio -->
+        <div class="instruction-card">
+            <h3>🏆 Punteggio</h3>
+            <ul class="score-list">
+                <li><span>4 Lettere</span> <strong>1 pt</strong></li>
+                <li><span>5 Lettere</span> <strong>2 pt</strong></li>
+                <li><span>6+ Lettere</span> <strong>3+ pt</strong></li>
+            </ul>
+            <div class="score-warning">
+                ⚠️ <strong>Attenzione:</strong> Se due giocatori trovano la stessa parola, questa viene annullata!
+            </div>
+        </div>
     </div>
 
     <div class="game-board" id="board">
@@ -20,11 +36,11 @@
 
     <div class="controls">
         <button class="btn-roll" onclick="rollDice()">🎲 Mescola Dadi</button>
-        <button onclick="startTimer()">⏱️ Avvia Timer (3 min)</button>
+        <button onclick="startTimer()">⏱️ Avvia Timer (1 min)</button>
     </div>
 
     <div class="timer-container" id="timerDisplay" style="display:none;">
-        <span id="time">03:00</span>
+        <span id="time">01:00</span>
     </div>
 
     <script src="script.js"></script>
