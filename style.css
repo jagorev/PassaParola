@@ -203,6 +203,7 @@ h1:hover {
     gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 button {
@@ -222,13 +223,12 @@ button {
 .btn-roll:hover { background-color: #1976D2; }
 
 .timer-container {
-    margin-top: 20px;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     color: var(--text-secondary); /* Usa variabile */
     background: var(--card-bg); /* Usa variabile */
-    padding: 20px 40px;
+    padding: 10px 30px;
     border-radius: 16px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     display: flex;
