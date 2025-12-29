@@ -13,10 +13,10 @@ Welcome to **Passaparola Travel**, the digital version of the classic travel wor
 
 ## 🎮 How to Play
 
-1.  **Roll the Dice**: Click the **"🎲 Mescola Dadi"** button to generate a new combination of letters and start the 30-second countdown.
-3.  **Find Words**: Write down on a piece of paper all the meaningful words you can form with the visible letters.
+1.  **Roll the Dice**: Click the **"🎲 Mescola Dadi"** button to generate a new combination of letters. The 30-second timer starts automatically!
+2.  **Find Words**: Write down on a piece of paper all the meaningful words you can form with the visible letters.
     *   Words must have at least **4 letters**.
-4.  **Calculate Score**: When time runs out, compare words with other players.
+3.  **Calculate Score**: When time runs out, compare words with other players.
     *   **4 Letters**: 1 point
     *   **5 Letters**: 2 points
     *   **6+ Letters**: 3 or more points
@@ -35,12 +35,15 @@ No complex installation is required. The project is built with standard web tech
 *   `index.html`: The main structure of the page and game.
 *   `style.css`: The stylesheet managing layout, colors, and animations (including Dark Mode).
 *   `script.js`: The game logic (dice configuration, timer, event handling).
+*   `server.js`: A simple Node.js HTTP server to run the game locally.
+*   `package.json`: Project configuration and dependencies.
 
 ## 🛠️ Technologies Used
 
 *   **HTML5**: Semantics and structure.
 *   **CSS3**: CSS Variables, Flexbox, Grid, Animations.
 *   **JavaScript (Vanilla)**: Game logic without external dependencies.
+*   **Node.js**: Used to serve the application locally.
 
 ## 📝 License
 
