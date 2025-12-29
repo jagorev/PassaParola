@@ -6,14 +6,14 @@ Welcome to **Passaparola Travel**, the digital version of the classic travel wor
 
 *   **9 Virtual Dice**: Realistic simulation with specific letter configurations and colors.
 *   **Roll Animation**: "Shaking" effect to shuffle the dice.
-*   **Built-in Timer**: A 30-second countdown to track game time.
+*   **Built-in Timer**: A 60-second countdown to track game time.
 *   **Light/Dark Theme**: Dark Mode to play comfortably in any lighting condition.
 *   **On-Screen Rules**: Rules and scoring always visible for quick reference.
 *   **Responsive Design**: Optimized for desktop and mobile devices.
 
 ## 🎮 How to Play
 
-1.  **Roll the Dice**: Click the **"🎲 Mescola Dadi"** button to generate a new combination of letters. The 30-second timer starts automatically!
+1.  **Roll the Dice**: Click the **"🎲 Mescola Dadi"** button to generate a new combination of letters. The 60-second timer starts automatically!
 2.  **Find Words**: Write down on a piece of paper all the meaningful words you can form with the visible letters.
     *   Words must have at least **4 letters**.
 3.  **Calculate Score**: When time runs out, compare words with other players.

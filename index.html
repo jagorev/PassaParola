@@ -13,11 +13,21 @@
 
     <h1>Passaparola Travel</h1>
 
+    <div class="game-board" id="board">
+        </div>
+
+    <div class="controls">
+        <button class="btn-roll" onclick="rollDice()">🎲 Mescola Dadi</button>
+        <div class="timer-container" id="timerDisplay">
+            <span id="time">01:00</span>
+        </div>
+    </div>
+
     <div class="instructions-container">
         <!-- Card Regole -->
         <div class="instruction-card">
             <h3>📜 Regole</h3>
-            <p>Scrivi il maggior numero di parole di almeno <strong>4 lettere</strong> usando i caratteri estratti, prima che scada il tempo.</p>
+            <p>Scrivi il maggior numero di parole di almeno <strong>4 lettere</strong> usando i caratteri estratti, prima che scada il tempo. <br>Vince chi raggiunge per primo i <strong>50 punti</strong>!</p>
         </div>
 
         <!-- Card Punteggio -->
@@ -31,16 +41,6 @@
             <div class="score-warning">
                 ⚠️ <strong>Attenzione:</strong> Se due giocatori trovano la stessa parola, questa viene annullata!
             </div>
-        </div>
-    </div>
-
-    <div class="game-board" id="board">
-        </div>
-
-    <div class="controls">
-        <button class="btn-roll" onclick="rollDice()">🎲 Mescola Dadi</button>
-        <div class="timer-container" id="timerDisplay">
-            <span id="time">00:30</span>
         </div>
     </div>
 

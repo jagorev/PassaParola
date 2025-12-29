@@ -54,7 +54,7 @@ function startTimer() {
     const timeSpan = document.getElementById('time');
     display.style.display = 'flex';
     
-    let duration = 30 * 1; // 30 secondi
+    let duration = 60 * 1; // 60 secondi
     updateTimerDisplay(duration, timeSpan);
 
     countdown = setInterval(() => {

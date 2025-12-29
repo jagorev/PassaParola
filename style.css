@@ -204,6 +204,7 @@ h1:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 button {
@@ -219,6 +220,10 @@ button {
 .btn-roll {
     background-color: #2196F3;
     color: white;
+    font-size: 1.5rem;
+    padding: 22px 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 .btn-roll:hover { background-color: #1976D2; }
 
